@@ -1,0 +1,19 @@
+group 'ru.spbau.kaysin.fl'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile group: 'dk.brics', name: 'automaton', version: '1.12-1'
+
+    // https://mvnrepository.com/artifact/guru.nidi/graphviz-java
+    compile group: 'guru.nidi', name: 'graphviz-java', version: '0.2.2'
+}
